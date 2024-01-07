@@ -49,6 +49,7 @@ nav {
 
 .logo {
   width: 140px;
+  scale: 80%
 }
 
 nav ul li {
@@ -97,6 +98,12 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
   color: #e900fa;
+  position: relative;
+  z-index: 2;
+}
+
+.header-text p span {
+  color: #c799ff;
   position: relative;
   z-index: 2;
 }
@@ -161,10 +168,12 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li {
-  list-style: none;
+  /*list-style: none;*/
   margin: 10px 0;
 }
 
+.tab-contents ul li hr {
+  border-style: dashed;}
 .tab-contents ul li span {
   color: #c799ff;
   
