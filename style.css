@@ -16,7 +16,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/header.jpg);
+  background-image: url(images/headerimage2.png);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -30,7 +30,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0,0.4); /* Adjust the color and opacity (0.5 is 50% opacity) */
+  background-color: rgba(0, 0, 0,0.5); 
   z-index: 1;
 }
 
@@ -81,6 +81,7 @@ nav ul li a:hover::after {
 
 .header-text {
   margin-top: 20%;
+  text-align: center;
   font-size: 30px;
   position: relative;
   z-index: 2;
@@ -394,22 +395,28 @@ nav .fas {
 }
 
 @media only screen and (max-width: 600px) {
+  
   #header {
-    background-image: url(images/phone-background.png);
+    background-image: url(images/headerimage2.png);
   }
   .header-text {
-    margin-top: 100%;
+    margin-top: 67%;
+    text-align: center;
     font-size: 16px;
+    z-index:1;
   }
   .header-text h1 {
     font-size: 30px;
+
   }
+
   nav .fas {
     display: block;
     font-size: 25px;
   }
   nav ul {
-    background: #ff004f;
+    background: hsl(0 0% 20% / 0.1);
+    backdrop-filter: blur(1rem);
     position: fixed;
     top: 0;
     right: -200px;
@@ -429,6 +436,8 @@ nav .fas {
     left: 25px;
     cursor: pointer;
   }
+  
+  
   .sub-title {
     font-size: 40px;
   }
